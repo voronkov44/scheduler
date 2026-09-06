@@ -1,0 +1,56 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go binaries
+bin/
+dist/
+build/
+
+# Test binaries / coverage
+*.test
+*.out
+coverage.*
+coverage/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# IDE
+.idea
+.vscode
+
+# Mac users
+.DS_Store
+
+# gocache
+.gocache
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Database backups
+backups/*
+!backups/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Temporary files
+tmp/
+*.tmp
+
+# Kubernetes local/generated values
+deploy/k8s/*.local.yaml
+deploy/k8s/*-secret.yaml
+
+# Vault local data
+vault-data/
+
