@@ -39,10 +39,6 @@ go.work.sum
 backups/*
 !backups/.gitkeep
 
-# Logs
-logs/*
-!logs/.gitkeep
-
 # Temporary files
 tmp/
 *.tmp

@@ -1,0 +1,20 @@
+log_level: DEBUG
+
+api_server:
+  address: ":8081"
+  timeout: 5s
+
+database:
+  address: "postgres://scheduler:scheduler@localhost:5432/scheduler?sslmode=disable"
+  max_open_conns: 20
+  max_idle_conns: 10
+  conn_max_lifetime: 1h
+
+itmo:
+  adapter_url: "http://127.0.0.1:35601"
+  timeout: 10s
+
+nats:
+  url: "nats://localhost:4222"
+  stream: "SCHEDULER"
+  consumer: "SCHEDULER_SYNC"
